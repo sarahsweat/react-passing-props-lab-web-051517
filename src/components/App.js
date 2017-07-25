@@ -27,6 +27,7 @@ export default class App extends React.Component {
 
   componentWillMount = () => {
     this.fetchFilters()
+    this.fetchFruit()
   }
 
   handleFilterChange = event => {

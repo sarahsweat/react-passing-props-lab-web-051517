@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 const Filter = (props) => {
-
     return (
       <select onChange={props.handleChange} defaultValue='all'>
         <option value='all'>All</option>
@@ -15,7 +14,6 @@ const Filter = (props) => {
 Filter.defaultProps = {
   filters: null,
   handleChange: null
-  
 }
 
 export default Filter;

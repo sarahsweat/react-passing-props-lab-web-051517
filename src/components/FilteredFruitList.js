@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const FilteredFruitList = (props) => {
 
-    const list = !props.filter ? props.fruit : props.fruit.filter(i => i.fruit_type === props.filter);
+    const list = !props.filter ? props.fruit : props.fruit.filter(i => i.fruit_type === props.filter)
 
     return (
       <ul className="fruit-list">
@@ -10,6 +10,7 @@ const FilteredFruitList = (props) => {
       </ul>
     )
   }
+
 FilteredFruitList.defaultProps = {
   filter: null,
   fruit: null
